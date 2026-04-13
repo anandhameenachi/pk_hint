@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Special Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PAGE 1 : QUESTION -->
+<div class="container" id="questionPage">
+
+<h1 class="welcome">Welcome Mr PethanaKumar</h1>
+
+
+<p class="hint">
+
+<br><br>
+Some meetings don’t start with conversations.
+They start with a name you keep hearing but never really see the person.
+Paths cross, and the timing somehow feels right.
+While everyone else is busy, destiny quietly brings two people together.
+It’s the same room, almost the same moment, with a pause at the door.
+One person looks down, the other notices the small details.
+One is waiting, and the other steps inside.
+</p>
+
+<input type="text" id="answer" placeholder="Enter your answer">
+
+<p id="attempts">Attempts left: 3</p>
+
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="message"></p>
+
+</div>
+
+<!-- PAGE 2 : MEMORIES -->
+<div class="container" id="memoryPage">
+
+
+
+<img src="pk.jpeg" class="photo">
+
+<!-- Background Audio -->
+<audio id="bgAudio" loop>
+  <source src="WhatsApp_Audio_2026-04-13_at_9_05_42_PM.mpeg.mpeg" type="audio/mpeg">
+</audio>
+
+<!-- TAP TO ENTER SCREEN -->
+<div id="tapScreen" style="
+  position:fixed; top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.7);
+  z-index:999;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+">
+  <h1 style="color:white; font-size:36px; animation: glowBlue 2s infinite alternate;">
+    ✨ Tap to Enter ✨
+  </h1>
+</div>
+
+</div>
+
+<!-- Butterfly Background -->
+<div class="butterfly-container">
+  <img src="https://pngimg.com/uploads/butterfly/butterfly_PNG1043.png" class="butterfly b1">
+  <img src="https://pngimg.com/uploads/butterfly/butterfly_PNG1043.png" class="butterfly b2">
+  <img src="https://pngimg.com/uploads/butterfly/butterfly_PNG1043.png" class="butterfly b3">
+</div>
+
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="PixVerse_V6_Image_Text_360P_2D_animated_cinema.mp4" type="video/mp4">
+</video>
+<script src="script.js"></script>
+
+</body>
+</html>
